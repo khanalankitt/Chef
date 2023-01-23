@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Chef</title>
+</head>
+<body>
+    <section class="lander">
+        <div class="nav">
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img src="./logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="#aboutme">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <h1>I'm a </h1>
+            <h1 id="h1-span"><span class="auto-type"></span></h1>
+        </div>
+    </section>
+    <br><br>
+    <section id="aboutme" class="aboutme">
+        <div class="aboutme-inner">
+            <div class="aboutme-inner-left">
+                <button class="button-aboutme-inner-left">
+                    About Me
+                </button>
+                <br>
+                <br>
+                <h2>
+                    I feel like a prince with a knife.
+                    I've wanted to be an Iron Chef.
+                </h2>
+                <br>
+                <p>I would describe myself as a passionate, confident, and creative chef who can 
+                    skilfully plan menus, prepare outstanding food, manage budgets, and lead a 
+                    team of people to deliver quality of service to your customers.
+                    </p>
+
+                
+                <p id="p-aboutme">If you hire me as your chef, I will 
+                    be committed to the hours you need me to work and 
+                     I will demonstrate exceptional time keeping.
+                </p>
+                <br><br><br>
+                <button class="button-aboutme-inner-left1" onClick="displayHiddenItem()">
+                    Show More
+                </button>
+            </div>
+            <div class="aboutme-inner-right">
+
+            </div>
+        </div>
+        <div class="extend">
+            <div class="extend-inner skills">
+                <big>Skills</big>
+                <ul>
+                    <br>
+                    <li>Food/Beverage</li>
+                    <li>Catering</li>
+                    <li>Hospitality</li>
+                    <li>Management</li>
+                </ul>
+            </div>
+            <div class="extend-inner service">
+                <big>Service</big>
+                <ul>
+                    <br>
+                    <li>Budget</li>
+                    <li>Preparation</li>
+                    <li>Quality</li>
+                    <li>Presentation</li>
+                </ul>
+            </div>
+            <div class="extend-inner passion">
+                <big>Passion</big>
+                <ul>
+                    <br>
+                    <li>Obsessed</li>
+                    <li>Optimistic </li>
+                    <li>Fast Work</li>
+                    <li>Intuition</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<br>
+<br>
+    <section id="gallery" class="gallery">
+        <div class="text">
+            <button class="button-gallery">
+                Gallery
+            </button>
+            <br><br>
+            <h2>
+                People who love to eat are always the best people to be with.
+            </h2>
+            <br>
+            <p>
+                Eating is not merely a material pleasure. 
+                Eating well gives a spectacular joy to life and contributes immensely to goodwill 
+                and happy companionship. It is of great importance to the morale. Here's my work.
+                        </p>
+            <br>
+        </div>
+        <div class="images" >
+            <div class="row1">
+                <img src="./food1.jpg" alt="Food">
+                <img src="./food2.webp" alt="Food">
+                <img src="./food3.webp" alt="Food">
+            </div>
+            <div class="row2">
+                <img src="./food4.jpeg" alt="Food">
+                <img src="./food5.jpeg" alt="Food">
+                <img src="./food6.jpg" alt="Food">
+            </div>
+            <div class="row3">
+                <img src="./food7.jpg" alt="Food">
+                <img src="./food8.jpg" alt="Food">
+                <img src="./food9.jpg" alt="Food">
+            </div>
+            <br><br>
+        </div>
+    </section>
+    <br>
+    
+
+    <section id="contact" class="contact">
+        <button class="button-contact">
+            Contact
+        </button>
+        
+        <br>
+        <p>Call For A Conversation On (977) 9824028950</p>
+        <p>Or Fill Out The Form Below</p>
+        <form action="#">
+            <input type="text" name="name" placeholder=" Name" required="required"><br>
+            <input type="text" name="email" placeholder=" Email" required="required"><br>
+            <input type="text" name="number" placeholder=" Number" required="required"><br>
+            <textarea name="textarea" cols="78" rows="8s" placeholder=" Message"></textarea><br>
+            <input id="submit" type="submit" name="submit" value="Submit">
+        </form>
+        <br>
+        <div class="icons">
+            <a target="_blank" href="https://www.facebook.com/khanalankit69">
+                <img id="fb" src="./fb.png" alt="">
+            </a>
+            <a target="_blank" href="https://twitter.com/KhanalAnkitt">
+                <img src="./twitter.png" alt="">
+            </a>
+            <a target="_blank" href="https://wa.me/9779824028950">
+                <img src="./whattsap.png" alt="">
+            </a>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer">
+            <p>© 2023 Ankit Khanal | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed=new Typed(".auto-type",{
+        strings:["Cook","Foodie","Gourmet"],
+        typeSpeed:120,
+        backSpeed:100,
+        loop:true
+    })
+</script>
+</body>
+</html>

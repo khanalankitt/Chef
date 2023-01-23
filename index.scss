@@ -1,0 +1,527 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+    font-family: "Segoe UI",Arial,sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.lander{
+    width:100vw;
+    height:100vh;
+    background-image:url('./landerbg1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    display:flex;
+    flex-direction: column;
+    .nav{
+        height:15%;
+        margin:auto;
+        nav{
+            height:100%;
+            width:80vw; 
+            display: flex;
+            flex-direction: row;   
+            align-items: center; 
+            .logo{
+                height:100%;
+                width:70%;
+                img{    
+                    height:70px;
+                    margin-top:15px;
+                    object-fit: contain;
+                    position: fixed;
+                }
+            }
+            .links{
+                width:25%;
+                height:100%;
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    font-size:15px;
+                    color:white;
+                    border-bottom:1.5px;
+                    margin:0px 30px 0px 0px;
+                    transition:border-bottom 0.2s;
+                    &:hover{
+                        border-bottom:1.5px solid white;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        height:90%;
+        width:100vw;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            color:white;
+            font-size: 90px;        
+        }
+        span{
+            color:red;
+            font-size: 90px;
+        }
+    }
+}
+
+
+
+//lander responsive
+@media(max-width:768px){
+    .lander{
+        height:700px;
+        background-size:cover;
+        .nav{
+            height: 15%;
+            nav{
+                width:100vw;
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                .logo{
+                    
+                    img{
+                        height:60px;
+                        margin:15px 0px 0px 15px;
+                    }
+                }
+                .links{
+                    width:70%;
+                    margin:0px;
+                    margin-right:25px;
+                    a{
+                        font-size: 15px;
+                        margin:0px 20px 0px 0px;
+                    }
+                }
+            }
+        }
+        .main{
+            h1{
+                font-size: 70px;
+            }
+            span{
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+//aboutme
+
+
+.aboutme{
+    height:auto;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    .aboutme-inner{
+        width:65%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .aboutme-inner-left{
+            height:80%;
+            width:60%;
+            .button-aboutme-inner-left{
+                height:45px;
+                width:auto;
+                font-size:50px;
+                font-family:monospace;
+                font-weight: bold;
+                border:none;
+                border-radius:3px;
+                color:red;
+                background: none;
+                
+            }
+            .button-aboutme-inner-left1{
+                height:35px;
+                width:90px;
+                font-size:16px;
+                font-family:monospace;
+                border:none;
+                border-radius:3px;
+                cursor: pointer;
+                color:white;
+                background: red;
+                transition: font-size 0.1s;
+                &:hover{
+                    font-size:15px;
+                }
+            }
+        }
+        .aboutme-inner-right{
+            width:35%;
+            height:90%;
+            border-radius:3px;
+            background:url('./chef.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+    }
+    .extend{
+        height:auto;
+        width:100%;
+        display: none;
+        justify-content: center;
+        align-items: space-around;
+        .skills,.service,.passion{
+            height:180px;
+            width:180px;
+            margin:0px 10px 0px 10px;
+            background:#f1f1f9;
+            padding:20px;
+            border-radius: 5px;
+            big{
+                margin-left: 10px;
+            }
+            ul{
+                margin-left:20px;
+            }
+            
+        }
+    }
+}
+
+
+
+//aboutme-responsive
+@media(max-width:768px){
+    .aboutme{
+        .aboutme-inner{
+            width:90%;
+            height:auto;
+            flex-direction: column;
+            .aboutme-inner-left{
+                width:90%;
+                h2{
+                    font-size:20px;
+                }
+                .button-aboutme-inner-left{
+                    height: 30px;
+                    font-size: 30px;
+                }
+                .button-aboutme-inner-left1{
+                    font-size: 13px;
+                }
+                p{
+                    text-align: justify;
+                    font-size: 16px;
+                    margin-bottom: -35px;
+                }
+                #p-aboutme{
+                    display: none;
+                }
+            }
+            .aboutme-inner-right{
+                width:250px;
+                height:300px;
+                margin-top: 20px;
+            }
+        }
+        .extend{
+            .skills,.service,.passion{
+                height:130px;
+                width:120px;
+                margin:20px 5px 0px 5px;
+                padding:15px;
+                big{
+                    font-size: 18px;
+                    margin-left:5px;
+                    padding:0px;
+                }
+                ul{
+                    margin-top: -10px;
+                    margin-left: 7px;
+                    li{
+                        font-size: 14px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1000px){
+    .aboutme{
+        .aboutme-inner{
+            width:90%;
+        }
+    }
+}
+
+
+@media(max-width:370px){
+    .aboutme{    
+        .extend{
+            .skills,.service,.passion{
+                width:100px;
+                height:120px;
+                padding: 12px;
+                big{
+                    margin-left:0px;
+                    font-size: 15px;
+                }
+                ul{
+                    margin-top: -15px;
+                    li{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+    #gallery{
+        .text{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+//gallery
+
+
+
+.gallery{
+    height:auto;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:65%;
+        .button-gallery{
+            height:45px;
+            width:110px;
+            font-size:50px;
+            font-family:monospace;
+            font-weight: bold;
+            border:none;
+            border-radius:3px;
+            color:red;
+            background: none;
+            
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .button-gallery1{
+                height:35px;
+                width:90px;
+                font-size:16px;
+                font-family:monospace;
+                font-weight: bold;
+                border:none;
+                border-radius:3px;
+                margin:auto;
+                color:white;
+                cursor: pointer;
+                background: red;
+                transition: font-size 0.1s;
+                &:hover{
+                    font-size:15px;
+                }
+        }
+        img{
+            height:200px;
+            width:250px;
+            border-radius: 3px;
+            object-fit: cover;
+            transition: width 0.5s;
+            &:hover{
+                width:270px;
+            }
+        }
+    }
+}
+
+//gallery responsive
+@media(max-width:768px){
+    .gallery{
+        .text{
+            width:90%;
+            .button-gallery{
+                font-size: 30px;
+                height:30px;
+            }
+            h2{
+                font-size: 20px;
+                text-align: justify;
+                margin-top: -10px;;
+            }
+            p{
+                font-size: 16px;
+                margin-top: -10px;
+                text-align: justify;
+            }
+        }
+        .images{
+            .row1,.row2,.row3{
+                display: flex;
+                flex-direction: column;
+            }
+            img{
+                height:300px;
+                width:300px;
+                margin:5px 0px 5px 0px;
+                transition: none;
+                &:hover{
+                    width:300px;
+                }
+            }
+        }
+    }
+}
+
+//contact
+.contact{
+    width:100vw;
+    display: flex;
+    background: #f1f1f9;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .button-contact{
+        height:45px;
+        width:auto;
+        font-size:50px;
+        font-family:monospace;
+        font-weight: bold;
+        border:none;
+        border-radius:3px;
+        color:red;
+        background: none;
+    }
+    form{
+        input{
+            width:500px;
+            height:35px;
+            border-radius: 5px;
+            border:1px solid #f1f1f1;
+            margin-top:10px;
+            padding:5px;
+            outline: none;
+        
+        }
+        textarea{
+            margin-top:15px;
+            border:1px solid #f1f1f1;
+            outline: none;
+            padding:5px;
+            border-radius: 5px;;
+        }
+    }
+    .icons{
+        width:100%;
+        height:auto;
+        display: flex;
+        
+        justify-content:center;
+        align-items: center;
+        a{
+            #fb{
+                height:50px;
+                border-radius: 50%;
+            }
+            img{
+                margin:0px 10px 0px 10px;
+                height:50px;
+                width:50px;
+                object-fit:contain;
+            }
+        }
+    }
+}
+
+//contact responsive 
+@media(max-width:768px){
+    .contact{
+        height:520px;
+        .button-contact{
+            height:30px;
+            font-size: 33px;
+        }
+        p{
+            font-size: 12px;
+        }
+        form{
+            
+            input{
+                width:270px;
+                height:30px;
+            }
+            textarea{
+                width:270px
+            }
+            #submit{
+                margin-left:34%;
+                width:80px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+#submit{
+    height: auto;
+    width:100px;
+    border-radius: 5px;
+    font-size: 18px;
+    background:lightgrey;
+    margin-left:40%;
+}
+
+///footer
+footer{
+    background:#2b323c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    .footer{
+        color:white;
+        text-align: center;
+        p{
+            font-size: 20px;
+        }
+    }
+}
+//footer responsive
+@media(max-width:768px){
+    footer{
+        .footer{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
